@@ -21,16 +21,16 @@
 //Ans-
         const Find_Five = (N) => 
         { 
-        let x = 0;
+            let x = 0;
             for (; N > 0; )
             {
-            let y = 0;
-            y = parseInt(N % 10);
-            if(y == 5)
-            {
-            x++;
-            }
-            N = parseInt( N / 10);
+              let y = 0;
+              y = parseInt(N % 10);
+              if(y == 5)
+              {
+                x++;
+              }
+              N = parseInt( N / 10);
             }
             return(x);
         };
