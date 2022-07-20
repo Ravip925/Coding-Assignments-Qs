@@ -75,7 +75,7 @@ function addition (arr){
     for(i=0; i<arr.length; i++){
         sum += arr[i];
     }
-    console.log(sum);
+    console.log(`The sum of array elements are ${sum}`);
 }
 
 let myArray = [2,3,5,7,8,6];
