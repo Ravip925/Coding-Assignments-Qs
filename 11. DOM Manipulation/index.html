@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>DOM</title>
+</head>
+<body>
+    <p>// DOM Manipulation //QS.1 // Write the code to access element which is having id as "text"</p>
+    <span id="text">Hi! Whatsup!!</span>
+    <p>=====================================================================================</p>
+
+    <p>// Qs.2 // Write the code to access element which is having tag as "h1"</p>
+    <h1>Hello World!</h1>
+    <p>======================================================================================</p>
+
+    <p>// Qs.3 //Write the code to access element which is having class as "box"</p>
+    <p class="box">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <p>========================================================================================</p>
+
+    <p>// Qs.4. //Change the heading from ""Hello"" to ""Hello World"" using DOM functions"</p>
+    <h2>Hello</h2>
+    <p>===========================================================================================</p>
+
+    <p>// Qs.5 // Create three cards on HTML page and arrange them using flex property in row or horizontal direction and also create button at the bottom named "Change Flex direction". When user clicks on this button, the cards arrangement should be changed to vertical direction.</p>
+    <div id="cards">
+        <div class="inner"></div>
+        <div class="inner"></div>
+        <div class="inner"></div>
+    </div>
+    <button onclick="clickForVertical()" class="btn1">Flex Vertical</button>
+    <button onclick="clickForHorizontal()" class="btn2">Flex Horizontal</button>
+
+    <p>=======================================================================================================</p>
+
+    <p>Window - The window object is the topmost object of the DOM hierarchy. It represents a browser window or frame that displays the contents of the webpage. Whenever a window appears on the screen to display the contents of the document, the window object is created.</p>
+    <p>syntax - window.property_name;</p>
+    <br>
+    <p>Document - The document object represent a web page that is loaded in the browser. By accessing the document object, we can access the element in the HTML page. With the help of document objects, we can add dynamic content to our web page. The document object can be accessed with a window.document or just document.</p>
+    <p>syntax - document.property_name;</p>
+
+    <p>=============================================================================================================</p>
+
+    <p>// Qs.7 //Add one style attribute and give text color as red and id attribute and give the id value as ""heading"" in the above given h1 tag using DOM functions"</p>
+    <h1>Hello</h1><br>
+    <p>==============================================================================================================</p>
+
+
+    <p>// Qs.8 // Create an HTML page having content as Hello world and a button named Replace Text. //When user will click on this button page content should be changed to "Welcome to Elevation academy"</p>
+    <div id="textChange">
+        Hello World!!
+    </div>
+    <button onclick="changeMe()" class="btn3">Change Text</button><br>
+    <p>===============================================================================================================</p>
+
+    <p>// Qs.9 // Write code to implement timer clock using JS -- display HH:MM:SS -- the time should keep updating every second.</p>
+    <h3>Digital Clock</h3>
+    <div id="main">
+        <div class="box1" id="hours">00</div>
+        <div class="box1" id="minutes">00</div>
+        <div class="box1" id="seconds">00</div>
+        <div class="box1" id="session">00</div>
+    </div>
+    <p>===============================================================================================================</p>
+    <br><br>
+
+    <p>// Qs.10 //Create a select drop down for selecting Year 20-21, 21-22 etc. Print the item text selected</p>
+    <div class="drop">
+        <select name="" id="select">
+            <option value="2018-19">2018-19</option>
+            <option value="2019-20">2019-20</option>
+            <option value="2020-21">2020-21</option>
+            <option value="2021-22">2021-22</option>
+            <option value="2022-23">2022-23</option>
+        </select>
+    </div>
+    <button class="btn4" onclick="clickMe()">ClickME</button>
+    <div id="details">
+        <span class="span0">Selected Year:</span>
+        <span id="span1"></span>
+    </div>
+    <p>===============================================================================================================</p>
+    <br><br>
+
+
+    <p>Qs 11. "Create a form having name ,email, phone no. , birth year Add validations - phone no. should start with 91 , it should be 10 digits email should be domain prepbytes.com birth year should be > 95"</p>
+    <form>
+        <h4>Form</h4>
+        <input type="text" name="text1"  placeholder="Name *" required><br><br>
+        <input type="email" id="myemail" placeholder="Email Address (@prepbyte.com) *" required><br><br>
+        <input type="tel" size="10" pattern="^[91][0-9]{11}$" name="phone" placeholder="Phone Number [including 91]*" required><span id="spanPhone"></span><br><br>
+        <input type="text" id="bYear" placeholder="Birth Year (>1995)*" required>
+        <br><br>
+        <br><br>
+        <input class="btn5" type="submit" onclick="myform()" value="Submit">
+
+    </form>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
