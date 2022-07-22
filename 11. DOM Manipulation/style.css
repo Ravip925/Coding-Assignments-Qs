@@ -103,6 +103,9 @@ select{
     height:30px; 
     cursor: pointer; 
 }
+.btn4:active{
+    background-color: red;
+}
 input{
     background-color:rgb(225, 203, 245);
     border-left:none; border-right:none;
